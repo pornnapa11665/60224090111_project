@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Test</title>
+    <script type="text/javascript">
+        function Showemail() {
+            var my_mail = document.getElementById('mymail');
+            var mail = my_mail.value;
+            var mb_number = document.getElementById('mnb').value;
+            alert("อีเมลล์ : " + mail + " เบอร์โทร : " + mb_number);
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <h2>แบบฟอร์มสมัครงาน</h2>
+        <table>
+            <tr>
+                <td>
+                    <form action="/60224090111_project/test.php" method="post">                        
+                        เพศ : <br />
+                        <input type="radio" name="gender" value="male"> ชาย
+                            <input type="radio" name="gender" value="female" checked> หญิง
+                                <input type="radio" name="gender" value="other"> อื่นๆ <br />      
+                        ชื่อ นามสกุล : <br />
+                        <input type="text" name="name"  placeholder="กรุณาพิมพ์ภาษาไทย" /><br />
+                        อายุ : <br />
+                        <input type="number" name="age"><br />
+                        จังหวัด : <br />
+                        <select name="province">
+                            <option value="kan"selected>กาญจนบุรี</option>
+                            <option value="bkk">กรุงเทพ</option>
+                            <option value="nkt">นครปฐม</option>
+                        </select> <br />
+                        เบอร์โทร :<br />
+                        <input type="number" name="mobile_number" /><br />
+                        ประสบการณ์ :<br />
+                        <textarea rows="6" cols="50" name="experience"></textarea>
+                        </br />
+                        <input type="submit" value="ส่งข้อมูล" />
+                        <input type="reset" value="เคลียร์" />
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </center>
+   <a href="http://localhost/60224090111_project/show.php">แสดงข้อมูลทั้งหมด</a>
+   </br>
+    
+</body>
+
+</html>
